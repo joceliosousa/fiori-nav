@@ -1,0 +1,105 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Relatório do processo de Subcontratação'
+  }
+}
+annotate entity ZR_SUBCONT_REP with
+{
+  @Consumption.semanticObject: 'Product'
+  @UI: { lineItem:        [ { position: 10,
+                              importance: #HIGH,
+                              type:     #WITH_INTENT_BASED_NAVIGATION,
+                              semanticObject: 'Material',
+                              semanticObjectAction: 'displayProductMaster' }]}
+  //@UI.lineItem: [ { position: 10 } ]
+  Product;
+
+  @UI.lineItem: [ { position: 20, importance: #HIGH } ]
+  @UI.selectionField: [ { position: 20 } ]
+  @Consumption.filter.mandatory: true
+  //@Consumption.filter.selectionType: #INTERVAL
+  @EndUserText.label: 'Data Recepção'
+  Drecep;
+
+
+  @UI.lineItem: [ { position: 60, importance: #HIGH } ]
+  @UI.selectionField: [{ position: 60 }]
+  @Consumption.valueHelpDefinition :
+      [
+          {
+              entity: {
+                  name: 'I_BusinessPartnerVH',
+                  element: 'BusinessPartner'
+              }
+          }
+      ]
+  @EndUserText.label: 'Fornecedor'
+  Lifnr;
+
+
+  //  @Consumption.semanticObject: 'OutboundDelivery'
+  @UI.lineItem: [ { position: 80, importance: #HIGH } ]
+  @UI.selectionField: [ { position: 30 }]
+  @Consumption.filter.mandatory: true
+  @EndUserText.label: 'NF Remessa'
+  Blnumber;
+
+  @Consumption.semanticObject: 'PurchaseOrder'
+  @UI.lineItem: [
+  { position : 90, importance: #HIGH,
+    semanticObject: 'PurchaseOrder' ,
+    semanticObjectAction: 'manage',
+    type: #WITH_INTENT_BASED_NAVIGATION }
+  ]
+  @UI.selectionField: [{ position: 40 }]
+  @Consumption.valueHelpDefinition :
+      [
+          {
+              entity: {
+                  name: 'I_PurchasingDocumentStdVH',
+                  element: 'PurchasingDocument'
+              }
+          }
+      ]
+  @EndUserText.label: 'Pedido'
+  PurchaseOrder;
+  //  Ebeln;
+
+  @UI.lineItem: [ { position: 100, importance: #HIGH } ]
+  @UI.selectionField: [{ position: 50 }]
+  @EndUserText.label: 'Item Pedido'
+  Ebelp;
+
+  @Consumption.semanticObject: 'MaterialDocument'
+  @UI.lineItem: [ { position: 110,
+                    importance: #HIGH,
+                    type: #WITH_INTENT_BASED_NAVIGATION,
+                    semanticObject: 'Material',
+                    semanticObjectAction: 'postGoodsMovementInWebGUI' } ]
+  @EndUserText.label: 'Recebimento'
+  MaterialDocument;
+  //Mblnr;
+
+  @UI.lineItem: [ { position: 111, importance: #HIGH } ]
+  @EndUserText.label: 'Ano Receb.'
+  MaterialDocumentYear;
+
+  @UI.lineItem: [ {
+    position: 120,
+    importance: #HIGH,
+    type: #WITH_INTENT_BASED_NAVIGATION,
+    semanticObject: 'ZMM_UI5_MIR4',
+     semanticObjectAction: 'display' } ]
+  @EndUserText.label: 'Fatura'
+  @Consumption.semanticObject: 'SupplierInvoice'
+  SupplierInvoice;
+
+  @UI.lineItem: [ { position: 121, importance: #HIGH } ]
+  @EndUserText.label: 'Ano Fatura'
+  //@Consumption.semanticObject: 'FiscalYear'
+  FiscalYear;
+
+
+
+}

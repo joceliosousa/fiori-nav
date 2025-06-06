@@ -1,0 +1,4 @@
+@EndUserText.label: 'Data definition for SUBCONT_REP'
+define service ZSD_UI_SUBCONT_REP {
+  expose ZR_SUBCONT_REP as report;
+}
