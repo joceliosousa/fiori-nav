@@ -20,3 +20,13 @@ Com este você consegue entre APPs selecionando uma linha e clicando em um botã
 
 Ex: Selecionar e clicar em um botão:
 ![image](https://github.com/user-attachments/assets/85de21b4-28ce-4966-9a40-a24a6d35204c)
+
+Abrir um menu de opções:
+![image](https://github.com/user-attachments/assets/2944b569-54e6-41db-b94d-15a7f66ab0af)
+
+Obs: não é o foco desta postagem.
+
+#WITH_URL
+Used for navigation from an application to an external web site.
+
+![image](https://github.com/user-attachments/assets/63d29e07-ce4d-45b2-846f-a2d232e37d18)
