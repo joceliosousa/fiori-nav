@@ -37,5 +37,6 @@ Você pode criar um campo dinâmico (Virtual element) e tornar a url personalizd
       @Semantics.url: { mimeType: 'url' }
       url      as AirlineURL,
 
-      ![image](https://github.com/user-attachments/assets/2803293e-6f47-49b2-a53b-0d035237c68f)
+![image](https://github.com/user-attachments/assets/c0b08d4c-3462-4a42-bab0-dc9034ef26e9)
+
 
