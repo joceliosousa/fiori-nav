@@ -30,3 +30,12 @@ Obs: não é o foco desta postagem.
 Used for navigation from an application to an external web site.
 
 ![image](https://github.com/user-attachments/assets/63d29e07-ce4d-45b2-846f-a2d232e37d18)
+
+Você pode criar um campo dinâmico (Virtual element) e tornar a url personalizda de acordo com a linha do item:
+      @UI.lineItem: [{ position: 40 , type: #WITH_URL , url: 'AirlineURL'} ]
+      @UI.identification: [{ position: 40 , type: #WITH_URL , url: 'AirlineURL'}]
+      @Semantics.url: { mimeType: 'url' }
+      url      as AirlineURL,
+
+      ![image](https://github.com/user-attachments/assets/2803293e-6f47-49b2-a53b-0d035237c68f)
+
