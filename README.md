@@ -49,3 +49,34 @@ Dentro de um APP, quando utilizada as annotations, é gerada dentro de um espec�
 
 Antes de iniciar, procure o APP que precisa fazer o link a partir do seu. No meu cenário vou procurar APPs para Pedidos de Compras, Material, e outros que é uma transação específica local Brasil, MIGO_GO.
 
+A pesquisa pelo APP standard: PURCHASE, localizamos este app abaixo.
+![image](https://github.com/user-attachments/assets/b0f95bbb-019a-479e-9123-deb8a2875e07)
+
+Escolha a versão do ABAP plataform. No nosso caso 2023 PFS02.
+![image](https://github.com/user-attachments/assets/dad991bf-a922-48d8-9f8f-a1b654145615)
+
+em IMPLEMENTATION INFORMATION.
+Procure as opções de Target Mapping
+![image](https://github.com/user-attachments/assets/74a6e7fd-daa4-49c0-87f0-36fc54463cfd)
+
+Procure pelo catálogo:
+
+![image](https://github.com/user-attachments/assets/6fcd322b-9ef8-4b2b-b071-f77aff3eb43a)
+
+No seu LPD config verifique se existe realmente o Target Mapping e o Tile. Digo isto pois quando formos verificar a MIGO_GO, veremos que falta o tile.
+
+![image](https://github.com/user-attachments/assets/b09e7ee9-1417-417d-8d03-1d742f8d8fe3)
+
+![image](https://github.com/user-attachments/assets/87d0fb03-7b6d-4209-9bfa-e477db62cd8d)
+
+
+  @UI.lineItem: [
+  { position : 90, importance: #HIGH,
+    semanticObject: 'PurchaseOrder' ,
+    semanticObjectAction: 'manage',
+    type: #WITH_INTENT_BASED_NAVIGATION }
+  ]
+
+
+
+
