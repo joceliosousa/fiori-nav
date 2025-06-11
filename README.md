@@ -41,7 +41,7 @@ Você pode criar um campo dinâmico (Virtual element) e tornar a url personalizd
 ![image](https://github.com/user-attachments/assets/c0b08d4c-3462-4a42-bab0-dc9034ef26e9)
 
 ## #WITH_NAVIGATION_PATH
-Used for navigation within an application.
+Usado para navegação dentro de um aplicativo.
 
 Este é o foco desta postagem. Representa uma ótima forma de navegar entre APPs dentro do Launchpad.
 
