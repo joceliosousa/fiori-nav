@@ -83,7 +83,7 @@ No seu LPD config verifique se existe realmente o Target Mapping e o Tile. Digo 
 ![image](https://github.com/user-attachments/assets/85efcd2e-9b1f-417d-ad9e-7b12a701acae)
 
 Cenário: Temos que chamar uma transação específica localização Brasil, ainda não tem APP, apenas Transação.
-Para configurar uma transação como a MIGO_GO, deveremos procurar no Fiori APP Library por 'MIGO_GO'.
+Para configurar uma transação como a MIGO_GO, deveremos procurar no Fiori APP Library por ** MIGO_GO **.
 Ao achar Display Material Document / Goods Movement (MIGO_GO) escolhemos a versão do ABAP plataform, iremos em IMPLEMENTATION INFORMATION e depois em Configuration.
 
 ![image](https://github.com/user-attachments/assets/ee43cce0-655c-4fe7-83c5-505c56f40fb1)
@@ -108,7 +108,7 @@ Agora é só criar o Tile.
 ![image](https://github.com/user-attachments/assets/ed503492-3e50-4f8e-b574-771e3bec281b)
 
 > [!NOTE]
-Observe no Target Mapping que existe um DE-PARA dos parametros de entrada, sim, aqueles parametros que usávamos no CALL TRANSACTION.
+Observe no Target Mapping que existe um DE-PARA dos parametros de entrada, sim, aqueles parametros que usávamos no ** CALL TRANSACTION **.
 ![image](https://github.com/user-attachments/assets/da071b59-4f05-45f7-823c-cc727bee24a2)
 
 Para este cenário eu preciso de dois parametros (campos na projection): MaterialDocument e MaterialDocumentYear.
@@ -130,7 +130,7 @@ Assim, temos que apresentar os campos acima com suas respectivas annotations.
   MaterialDocumentYear;
 ```
 
-  Assim, quando acessar a MIGO_GO, ele já vai entrar no registro escolhido.
+  Assim, quando acessar a ** MIGO_GO **, ele já vai entrar no registro escolhido.
   ![image](https://github.com/user-attachments/assets/df10c682-841b-4a00-a090-b88307d76900)
 
   ![image](https://github.com/user-attachments/assets/1c5b49b8-6010-40a1-af28-67be0150cdc9)
