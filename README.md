@@ -45,7 +45,7 @@ Usado para navegação dentro de um aplicativo.
 
 Este é o foco desta postagem. Representa uma ótima forma de navegar entre APPs dentro do Launchpad.
 
-Dentro de um APP, quando utilizada as annotations, é gerada dentro de um específico campo em uma linha, um link com outro APP, onde são passados os campos que fazem o link através da URL..
+Dentro de um APP, quando utilizada as annotations, é gerada dentro de um específico campo em uma linha um link com outro APP, onde são passados os campos que fazem o link através da URL.
 
 Antes de iniciar, procure o APP que precisa fazer o link a partir do seu. No meu cenário vou procurar APPs para Pedidos de Compras, Material, e outros que é uma transação específica local Brasil, MIGO_GO.
 
