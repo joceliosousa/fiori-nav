@@ -11,7 +11,7 @@ Antes de iniciar, deixo claro que o primeiro passo é procurar o respectivo APP 
 ## Tipos de Navegação.
 
 Concordando com o link oficial da SAP: https://help.sap.com/docs/abap-cloud/abap-rap/navigation, temos três tipos:
-Elas são identificadas pela propriedade type nas annotations lineItem e identification.
+Elas são identificadas pela propriedade type nas annotations @UI.lineItem e @UI.identification.
 
 ## #FOR_INTENT_BASED_NAVIGATION
 Usado para navegação baseada em uma ação relacionada a um objeto semântico.
