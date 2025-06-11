@@ -90,6 +90,56 @@ Ao achar Display Material Document / Goods Movement (MIGO_GO) escolhemos a vers�
 Encontraremos os seguintes Target Mappings e Catálogos.
 ![image](https://github.com/user-attachments/assets/e7348b5f-1897-469d-9e98-c815cd22461b)
 
-Pesquisando no meu ambiente, no catálogo: 
+Pesquisando no meu ambiente, no catálogo: SAP_TC_FIN_CFIN_BE_APPS
+
+![image](https://github.com/user-attachments/assets/dad95cd1-e073-4688-9a1a-8f712cb0bcbe)
+
+Porém, não existe Tile para ele.
+Teremos que colocar em um Catálogo customizado. 
+
+Selecione o Target Mapping CFinMaterialMovement e clique em 'Create Reference', neste ponto aponte o catalogo Z, no meu caso Z_MENU e tecle enter.
+![image](https://github.com/user-attachments/assets/7d74d274-390b-4b5c-b2b8-328fd8468e16)
+
+O Target Mapping agora está refenciado no catálogo Z.
+![image](https://github.com/user-attachments/assets/48d69bf2-4d8d-44fb-bd01-e8395e499b50)
+
+Agora é só criar o Tile.
+![image](https://github.com/user-attachments/assets/ed503492-3e50-4f8e-b574-771e3bec281b)
+
+Observe no Target Mapping que existe um DE-PARA dos parametros de entrada, sim, aqueles parametros que usávamos no CALL TRANSACTION.
+![image](https://github.com/user-attachments/assets/da071b59-4f05-45f7-823c-cc727bee24a2)
+
+Para este cenário eu preciso de dois parametros (campos na projection): MaterialDocument e MaterialDocumentYear.
+Assim, temos que apresentar os campos acima com suas respectivas annotations.
+
+  @UI.lineItem: [ { position: 110,
+                    importance: #HIGH,
+                    type: #WITH_INTENT_BASED_NAVIGATION,
+                    semanticObject: 'CFinMaterialMovement',
+                    semanticObjectAction: 'display'} ]
+  @EndUserText.label: 'Recebimento'
+  @Consumption.semanticObjectMapping.element: 'MaterialDocument'
+  MaterialDocument;
+  //Mblnr;
+
+  @UI.lineItem: [ { position: 111, importance: #HIGH } ]
+  @EndUserText.label: 'Ano Receb.'
+  MaterialDocumentYear;
+
+  Assim, quando acessar a MIGO_GO, ele já vai entrar no registro escolhido.
+  ![image](https://github.com/user-attachments/assets/df10c682-841b-4a00-a090-b88307d76900)
+
+  ![image](https://github.com/user-attachments/assets/1c5b49b8-6010-40a1-af28-67be0150cdc9)
+
+  Se o campo na CDS for diferente, dê um alias para eles para que obedeçam exatamente os parametros de entrada que deverão ser passados via URL para que a navegação vá diretamente para o registro especifico.
+  ![image](https://github.com/user-attachments/assets/da9fa82a-d715-45d8-8737-50fdfc524f8e)
+
+  Um abraço e até a próxima.
+
+
+
+
+
+
 
 
