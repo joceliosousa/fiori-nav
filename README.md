@@ -138,6 +138,9 @@ Assim, temos que apresentar os campos acima com suas respectivas annotations.
   Se o campo na CDS for diferente, dê um alias para eles para que obedeçam exatamente os parametros de entrada que deverão ser passados via URL para que a navegação vá diretamente para o registro especifico.
   ![image](https://github.com/user-attachments/assets/da9fa82a-d715-45d8-8737-50fdfc524f8e)
 
+> [!IMPORTANT]
+Tenha o código completo com todos objetos deste cenário na pasta src, neste repositório.
+
   Um abraço e até a próxima.
 
 
