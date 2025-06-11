@@ -122,7 +122,6 @@ Assim, temos que apresentar os campos acima com suas respectivas annotations.
                     semanticObject: 'CFinMaterialMovement',
                     semanticObjectAction: 'display'} ]
   @EndUserText.label: 'Recebimento'
-  @Consumption.semanticObjectMapping.element: 'MaterialDocument'
   MaterialDocument;
   //Mblnr;
 
