@@ -8,7 +8,7 @@ A Navegação Baseada em Intenção é uma técnica do Fiori Launchpad por meio 
 
 Antes de iniciar, deixo claro que o primeiro passo é procurar o respectivo APP que você precisará navegar desde o seu APP em [https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/]
 
-Tipos de Navegação.
+## Tipos de Navegação.
 
 Concordando com o link oficial da SAP: https://help.sap.com/docs/abap-cloud/abap-rap/navigation, temos três tipos:
 Todas elas utilizam a annotation Consumption como base.
