@@ -16,7 +16,7 @@ Todas elas utilizam a annotation Consumption como base.
 ## #FOR_INTENT_BASED_NAVIGATION
 Usado para navegação baseada em uma ação relacionada a um objeto semântico.
 
-Com este você consegue entre APPs selecionando uma linha e clicando em um botão, ou, ao clicar no item (ex: ordem de venda) ele irá abrir um menu com opções de navegação:
+Com este você consegue entre APPs selecionando uma linha e clicando em um botão, ou, ao clicar no item (ex: ordem de venda) ele irá abrir um menu com opções de navegação.
 
 Ex: Selecionar e clicar em um botão:
 ![image](https://github.com/user-attachments/assets/85de21b4-28ce-4966-9a40-a24a6d35204c)
