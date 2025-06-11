@@ -69,13 +69,14 @@ No seu LPD config verifique se existe realmente o Target Mapping e o Tile. Digo 
 
 ![image](https://github.com/user-attachments/assets/87d0fb03-7b6d-4209-9bfa-e477db62cd8d)
 
-
+```
   @UI.lineItem: [
   { position : 90, importance: #HIGH,
     semanticObject: 'PurchaseOrder' ,
     semanticObjectAction: 'manage',
     type: #WITH_INTENT_BASED_NAVIGATION }
   ]
+```
 
 ![image](https://github.com/user-attachments/assets/99740103-0b68-4dd2-bcd9-7735cd820425)
 
@@ -113,6 +114,7 @@ Observe no Target Mapping que existe um DE-PARA dos parametros de entrada, sim, 
 Para este cenário eu preciso de dois parametros (campos na projection): MaterialDocument e MaterialDocumentYear.
 Assim, temos que apresentar os campos acima com suas respectivas annotations.
 
+```
   @UI.lineItem: [ { position: 110,
                     importance: #HIGH,
                     type: #WITH_INTENT_BASED_NAVIGATION,
@@ -126,6 +128,7 @@ Assim, temos que apresentar os campos acima com suas respectivas annotations.
   @UI.lineItem: [ { position: 111, importance: #HIGH } ]
   @EndUserText.label: 'Ano Receb.'
   MaterialDocumentYear;
+```
 
   Assim, quando acessar a MIGO_GO, ele já vai entrar no registro escolhido.
   ![image](https://github.com/user-attachments/assets/df10c682-841b-4a00-a090-b88307d76900)
