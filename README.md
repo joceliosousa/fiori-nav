@@ -77,6 +77,19 @@ No seu LPD config verifique se existe realmente o Target Mapping e o Tile. Digo 
     type: #WITH_INTENT_BASED_NAVIGATION }
   ]
 
+![image](https://github.com/user-attachments/assets/99740103-0b68-4dd2-bcd9-7735cd820425)
 
+![image](https://github.com/user-attachments/assets/85efcd2e-9b1f-417d-ad9e-7b12a701acae)
+
+Cenário: Temos que chamar uma transação específica localização Brasil, ainda não tem APP, apenas Transação.
+Para configurar uma transação como a MIGO_GO, deveremos procurar no Fiori APP Library por 'MIGO_GO'.
+Ao achar Display Material Document / Goods Movement (MIGO_GO) escolhemos a versão do ABAP plataform, iremos em IMPLEMENTATION INFORMATION e depois em Configuration.
+
+![image](https://github.com/user-attachments/assets/ee43cce0-655c-4fe7-83c5-505c56f40fb1)
+
+Encontraremos os seguintes Target Mappings e Catálogos.
+![image](https://github.com/user-attachments/assets/e7348b5f-1897-469d-9e98-c815cd22461b)
+
+Pesquisando no meu ambiente, no catálogo: 
 
 
