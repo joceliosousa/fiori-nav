@@ -1,4 +1,4 @@
-Como Navegar de um APP para o outro com RAP-Fiori Elements
+# Como Navegar de um APP para o outro com RAP-Fiori Elements
 
 Parece simples, e é para ser simples. Porém, alguns erros classicos afetam na navegação de um app para outro utilizando annotations dentro de uma CDS (RAP-FIORI ELEMENTS).
 
@@ -6,7 +6,7 @@ Por isso, trago aqui algumas dicas e problemas enfrentados, sobre este assunto.
 
 A Navegação Baseada em Intenção é uma técnica do Fiori Launchpad por meio da qual o usuário pode iniciar outros aplicativos dependendo dos parâmetros de tempo de execução. Essa técnica é possível definindo alvos de navegação do aplicativo usando intenções abstratas, que, em tempo de execução, são resolvidas em URLs reais pelo serviço de resolução de alvos do Fiori Launchpad. Essa técnica de navegação contém uma ação, ou seja, relacionada a um objeto semântico. A combinação de objeto semântico e ação de objeto semântico é uma intenção. A anotação @Consumption.semanticObject é usada para navegação baseada em intenção, e o cliente decide como reagir quando essa navegação é acionada.
 
-Antes de iniciar, deixo claro que o primeiro passo é procurar o respectivo APP que você precisará navegar desde o seu APP em https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/
+Antes de iniciar, deixo claro que o primeiro passo é procurar o respectivo APP que você precisará navegar desde o seu APP em [https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/]
 
 Tipos de Navegação.
 
@@ -40,7 +40,7 @@ Você pode criar um campo dinâmico (Virtual element) e tornar a url personalizd
 
 ![image](https://github.com/user-attachments/assets/c0b08d4c-3462-4a42-bab0-dc9034ef26e9)
 
-#WITH_NAVIGATION_PATH
+## #WITH_NAVIGATION_PATH
 Used for navigation within an application.
 
 Este é o foco desta postagem. Representa uma ótima forma de navegar entre APPs dentro do Launchpad.
@@ -106,6 +106,7 @@ O Target Mapping agora está refenciado no catálogo Z.
 Agora é só criar o Tile.
 ![image](https://github.com/user-attachments/assets/ed503492-3e50-4f8e-b574-771e3bec281b)
 
+> [!NOTE]
 Observe no Target Mapping que existe um DE-PARA dos parametros de entrada, sim, aqueles parametros que usávamos no CALL TRANSACTION.
 ![image](https://github.com/user-attachments/assets/da071b59-4f05-45f7-823c-cc727bee24a2)
 
