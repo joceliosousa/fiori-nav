@@ -27,7 +27,7 @@ Abrir um menu de opções:
 Obs: não é o foco desta postagem.
 
 ## #WITH_URL
-Used for navigation from an application to an external web site.
+Usado para navegação de um aplicativo para um site externo.
 
 ![image](https://github.com/user-attachments/assets/63d29e07-ce4d-45b2-846f-a2d232e37d18)
 
